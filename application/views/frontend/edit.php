@@ -21,6 +21,11 @@
                                     <small style="color:red;"><?php echo form_error('last_name'); ?></small>
                                 </div>
                                 <div class="form-group">
+                                    <label for="salary">Salary</label>
+                                    <input type="number" name="salary" class="form-control" value="<?php echo $employee->salary ?>">
+                                    <small style="color:red;"><?php echo form_error('salary'); ?></small>
+                                </div>
+                                <div class="form-group">
                                     <label for="">Phone Number</label>
                                     <input type="number" name="phone" class="form-control" value="<?php echo $employee->phone ?>">
                                     <small style="color:red;"><?php echo form_error('phone'); ?></small>
@@ -29,6 +34,11 @@
                                     <label for="">Email Address</label>
                                     <input type="email" name="email" class="form-control" value="<?php echo $employee->email ?>">
                                     <small style="color:red;"><?php echo form_error('email'); ?></small>
+                                </div>
+                                <div class="form-group">
+                                    <label> image</label>
+                                    <input type="file" name="image" class="file-upload-default">
+                                    <small style="color:red;"><?php echo form_error('image'); ?></small>
                                 </div>
                                     <br>
                                 <div class="form-group">

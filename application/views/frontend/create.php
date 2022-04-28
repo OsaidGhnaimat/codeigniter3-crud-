@@ -9,7 +9,7 @@
 
                         </div>
                         <div class="card-body">
-                            <form action="<?php echo base_url('employee/store'); ?>" method="POST">
+                            <form action="<?php echo base_url('employee/store'); ?>" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="">First name</label>
                                     <input type="text" name="first_name" class="form-control">
@@ -21,6 +21,11 @@
                                     <small style="color:red;"><?php echo form_error('last_name'); ?></small>
                                 </div>
                                 <div class="form-group">
+                                    <label for="salary">Salary</label>
+                                    <input type="number" name="salary" class="form-control">
+                                    <small style="color:red;"><?php echo form_error('salary'); ?></small>
+                                </div>
+                                <div class="form-group">
                                     <label for="">Phone Number</label>
                                     <input type="number" name="phone" class="form-control">
                                     <small style="color:red;"><?php echo form_error('phone'); ?></small>
@@ -30,6 +35,12 @@
                                     <input type="email" name="email" class="form-control">
                                     <small style="color:red;"><?php echo form_error('email'); ?></small>
                                 </div>
+                                <div class="form-group">
+                                    <label> image</label>
+                                    <input type="file" name="image" class="file-upload-default">
+                                    <small style="color:red;"><?php echo form_error('image'); ?></small>
+                                </div>
+				        </div>
                                     <br>
                                 <div class="form-group">
                                     <button type="submit" name="submit" class="btn btn-primary">Save</button>

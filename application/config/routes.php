@@ -62,12 +62,41 @@ $route['blog/(:num)'] = 'PageController/blog/$1';
 
 //********************* */
 
-$route['employee']             = 'EmployeeController/index';
-$route['employee/add']         = 'EmployeeController/create';
-$route['employee/store']       = 'EmployeeController/store';
-$route['employee/edit/(:any)'] = 'EmployeeController/edit/$1';
+$route['employee']               = 'EmployeeController/index';
+$route['employee/add']           = 'EmployeeController/create';
+$route['employee/store']         = 'EmployeeController/store';
+$route['employee/storeOperation']= 'EmployeeController/storeOperation';
+$route['employee/edit/(:any)']   = 'EmployeeController/edit/$1';
 $route['employee/update/(:any)'] = 'EmployeeController/update/$1';
 $route['employee/delete/(:any)'] = 'EmployeeController/delete/$1';
+$route['employee/deleteOperation/(:any)'] = 'EmployeeController/deleteOperation/$1';
+$route['employee/manageSalary']  = 'EmployeeController/manageSalary';
+$route['employee/allOperations']  = 'EmployeeController/allOperations';
+
+$route['employee/search']        = 'EmployeeController/search';
+$route['employee/report/(:any)']        = 'EmployeeController/report/$1';
+
+$route['employee/searchAjax']        = 'EmployeeController/searchAjax';
+
+$route['employee/showForAllEmp']        = 'EmployeeController/showForAllEmp';
+$route['employee/storeOperationForAll']        = 'EmployeeController/storeOperationForAll';
+
+$route['employee/showMainReport']        = 'EmployeeController/showMainReport';
+
+$route['employee/photo']        = 'EmployeeController/savePhoto';
+
+$route['employee/photoDownload']        = 'EmployeeController/photoDownload';
+
+
+
+
+
+
+
+
+
+
+
 
 
 
